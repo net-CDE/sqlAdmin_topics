@@ -1,0 +1,25 @@
+
+
+dnscmd testfabrik-dc.test-fabrik.local /recorddelete test-fabrik.local SQLwork  A  10.0.2.6 /f
+
+timeout 2
+
+dnscmd testfabrik-dc.test-fabrik.local /recordadd    test-fabrik.local SQLwork  A  10.0.2.7
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
