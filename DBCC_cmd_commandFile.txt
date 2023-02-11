@@ -1,0 +1,20 @@
+
+##  run the command on Server ...
+
+set Year=%date:~10,4%
+set Month=%date:~4,2%
+set Day=%date:~7,2%
+
+set Hour=%time:~0,2%
+set Min=%time:~3,2%
+
+
+sqlcmd -i D:\admin\cmd_[Servername1]_DBCC_CheckDB.sql    -o D:\admin\result_[Servername1]_DBCC_CheckDB_%Year%%Month%%Day%_%Hour%%Min%.txt    -S "Servername1" -E
+
+sqlcmd -i D:\admin\cmd_[Servername2]_DBCC_CheckDB.sql    -o D:\admin\result_[Servername2]_DBCC_CheckDB_%Year%%Month%%Day%_%Hour%%Min%.txt    -S "Servername2" -E
+
+
+##  finish  ##
+
+
+ 
