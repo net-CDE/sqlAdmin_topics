@@ -53,7 +53,7 @@ exec sp_executesql @sqlCmd
 --  compare Logins
 
 select @@servername   as 'ServerName'
-     . sp.name
+     , sp.name
      , sp.sid
      , sp.type_desc
      , sl.password
@@ -61,6 +61,6 @@ select @@servername   as 'ServerName'
 from   sys.server_principals sp
 join   sys.syslogins sl
 on     sp.sid = sl.sid
-where  sp.name = 'SQLLogin01'  -- <<  "sample"-Input
+where  sp.name = @new_Login  -- <<  "sample"-Input
 
 ----
