@@ -1,4 +1,4 @@
-CREATE Proc spTool_hexadecimal
+CREATE Proc dbo.spTool_hexadecimal
             @binValue  varbinary(256)  
           , @hexValue  varchar(514)  OUTPUT
 AS
