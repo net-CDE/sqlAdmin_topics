@@ -1,6 +1,7 @@
 CREATE VIEW dbo.vw_Logins_cross_ServerRoles
 AS
-SELECT sp.name
+SELECT @@SERVERNAME                                         as  ServerName     
+     , sp.name                                              as  Login_name     
      , MAX(CASE WHEN rm.role_principal_id =  3 THEN 1 END)  as  sysadmin       
      , MAX(CASE WHEN rm.role_principal_id =  4 THEN 1 END)  as  securityadmin  
      , MAX(CASE WHEN rm.role_principal_id =  5 THEN 1 END)  as  serveradmin    
