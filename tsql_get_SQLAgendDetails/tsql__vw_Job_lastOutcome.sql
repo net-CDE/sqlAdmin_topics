@@ -1,4 +1,4 @@
-CREATE VIEW audit.vw_Job_lastOutcome
+CREATE VIEW [audit].[vw_Job_lastOutcome]
 AS
 
 WITH
