@@ -1,4 +1,4 @@
-CREATE VIEW [audit].[vw_JobHistory]
+CREATE VIEW [audit].[vw_Job_History]
 AS 
 
 SELECT @@SERVERNAME   as 'Servername'  
